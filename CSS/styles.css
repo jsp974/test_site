@@ -1,0 +1,134 @@
+@font-face {
+    font-family: quicksand;
+    src: url(Quicksand-Light.otf);
+}
+
+
+
+nav {
+    width: 75%;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav div {
+    background-color: #5BBDBF;
+    display:inline;
+}
+
+nav a {
+    background-color: #c0d5c2;
+    padding: 0px 10px;
+    border-left: 2px solid black;
+}
+nav .accueil {
+    border-left: none;
+}
+
+body {
+    line-height: 150%;
+    background-color: #838892;
+    width: 600px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: quicksand;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    border: 1px solid #CCCCCC;
+}
+
+p{
+
+    text-indent: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pair {
+    background-color: #5BBDBF;
+}
+
+.impair {
+    background-color: #FF5850;
+}
+
+.skill {
+    color: #FF5850;
+    font-style: italic;
+}
+
+.specialiste {
+    clear: left;
+}
+
+/* concernant les images : */
+
+.chuck_jeune {
+    float : left;
+    height: 150px;
+    margin-right: 5px;
+    
+}
+
+.beware {
+    height: 300px;
+    float: right;
+    margin-left: 5px;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0088FF;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+main div {
+    margin-top: 20px;
+}
+
+
+thead {
+    background-color: #00AAFF;
+}
+
+table .skill {
+    color: #640051;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #CCC;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+}
+
+.icone {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

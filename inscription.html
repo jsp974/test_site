@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+        <title>Inscription</title>
+    </head>
+    <body>
+        <header>
+            <blockquote>
+				"Little John: Braddock ! Je vous préviens, attention où vous mettez les pieds !
+			Braddock : Je mets les pieds où je veux, Little John… et c'est souvent dans la gueule."
+			</blockquote>
+			<cite>Chuck Norris, Portés disparus 3 (1988), écrit par Arthur Silver, Larry Levinson, James Bruner, Chuck Norris, Steve Bing</cite>
+            <nav>
+				<div>
+					<a class="accueil" href="../td1/index.html ">Accueil</a></div><!--
+				--><div>
+					<a href="./facts.html">Facts</a></div><!--
+				--><div>
+					<a href="./news.html">Actualités</a></div><!--
+				--><div>
+					<a href="../td2/contact.html">Contact</a></div><!--
+                --><div> 
+                    <a href="inscription.html">Inscription</a></div>                        
+			</nav>
+        </header>
+
+        <main>                
+            <form method="get" action="trt.php">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <div>
+                    <label for="id">
+                        Nom* : <input required id="id" name="uname" type="text" value="id">
+                    </label>
+                    </div>
+                    <div>
+                        <label for="name">
+                            Prénom* : <input required id="name" name="firstname" type="text" value="name">
+                        </label>
+                    </div>
+                    <div>
+                        <p>Sexe :</p>
+                        <input id="fille" name="sexe" type="radio" value="fille">
+                        <label for="fille">Fille </label><br>
+                        <input id="gars" name="sexe" type="radio" value="gars">
+                        <label for="gars">Garçon</label><br>
+                        <input id="NB" name="sexe" type="radio" value="NB">
+                        <label for="NB">Non Binaire</label><br>
+                    </div>
+                    <div>
+                        <label for="paysOrigine">Pays d'origine :</label>
+                        <select name="paysOrigine" id="paysOrigine">
+                            <option value="fr">France</option>
+                            <option value="vietnam">Vietnam</option>
+                            <option value="usa">U.S.A.</option>
+                            <option value="china">Chine</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dateNaissance">
+                            Date de naissance : <input id="dateNaissance" name="dateNaissance" type="date">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">
+                            Email* : <input required id="email" name="email" type="email" placeholder="yourmail@domain.com">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Les sports de combat</legend>
+                    <div>
+                        <label for="nivKarate">
+                            Niveau de Karaté : <input id="nivKarate" name="nivKarate" type="number" min="0" max="5">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="pref">Arts-Martiaux préférés:</label>
+                        <select multiple id="pref">
+                            <option value="fr">Kung-fu</option>
+                            <option value="vietnam">Karaté</option>
+                            <option value="usa">Full-contact</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Inscription</legend>
+                    <div>
+                        <label for="mdp">
+                            Mot de Passe* : <input required id="mdp" name="mdp" type="password" pattern="">
+                        </label>
+                    </div>
+                    <div>
+                        <p>Niveau d'engagement :</p>
+                        <input id="basique" name="abo" type="radio" value="basique">
+                        <label for="basique">Basique (5€) </label><br>
+                        <input id="gold" name="abo" type="radio" value="gold">
+                        <label for="gold">Gold (15 €)</label><br>
+                        <input id="tatane" name="abo" type="radio" value="tatane">
+                        <label for="tatane">Tatane in your face (50 €)</label>
+                    </div>
+                    <div>
+                        <label for="msgChuck">Ton message pour Chuck :</label><br><br>
+                        <textarea id="msgChuck" name="msg" rows="6" cols="35" placeholder="Un inscrit sera tiré au sort et verra son message transmis à Chuck Norris." ></textarea>
+                    </div>
+                    <div>
+                        <input id="conditions" name="conditions" type="radio" value="conditions">
+                        <label for="conditions" required>J'ai bien lu les clauses que je n'ai pas lu*</label> 
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Envoyer">
+                </div><br>
+            </form>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
